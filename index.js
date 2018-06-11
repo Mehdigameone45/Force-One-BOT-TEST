@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 
-bot.login('NDU1Nzk1OTc1NzU2NDQ3NzYx.DgBMnA.eURAo9lsKfMADMU86DWqUC_zGhQ')
+bot.login(process.env.TOKEN)
 
 bot.on("ready", () => { //On dis que quand le bot est prêt, on va faire une action.
     bot.user.setStatus("dnd") //Le bot va se mettre en mode ne pas déranger
